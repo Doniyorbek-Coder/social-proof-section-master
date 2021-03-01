@@ -56,3 +56,34 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+.social-proof-container {
+  display: flex;
+  justify-content: space-between;
+}
+.social-proof-rated_list {
+  list-style-type: none;
+  flex: 0.55;
+}
+.social-proof-head_left {
+  flex: 0.45;
+}
+.social-proof-title {
+  font-size: 44px;
+}
+.social-proof-rated_item {
+  width: 445px;
+  height: 55px;
+  border-radius: 10px;
+  background-color: #f7f2f8;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+.social-proof-rated_item::before {
+  background-image: url(../images/icon-star.svg);
+  width: 17px;
+  height: 16px;
+  content: "";
+  display: block;
+}
