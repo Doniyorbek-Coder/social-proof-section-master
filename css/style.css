@@ -80,10 +80,10 @@ img {
   display: flex;
   align-items: center;
 }
-.social-proof-rated_item::before {
+/* .social-proof-rated_item::before {
   background-image: url(../images/icon-star.svg);
   width: 17px;
   height: 16px;
   content: "";
   display: block;
-}
+} */
