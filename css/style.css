@@ -59,20 +59,50 @@ img {
 .social-proof-container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 50px;
 }
+.social-proof {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.social-proof::before {
+  display: block;
+  content: "";
+  background-image: url(../images/bg-pattern-top-desktop.svg);
+  width: 584px;
+  height: 362px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.social-proof::after {
+  display: block;
+  content: "";
+  background-image: url(../images/bg-pattern-bottom-desktop.svg);
+  width: 1085px;
+  height: 673px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 .social-proof-rated_list {
   list-style-type: none;
-  flex: 0.55;
+  z-index: 1;
 }
-.social-proof-head_left {
-  flex: 0.45;
-}
+
 .social-proof-title {
-  font-size: 44px;
+  font-size: 48px;
+  margin: 0;
 }
 .social-proof-rated_item {
   width: 445px;
   height: 55px;
+  padding-left: 25px;
+  margin-top: 15px;
   border-radius: 10px;
   background-color: #f7f2f8;
   font-weight: bold;
@@ -80,10 +110,63 @@ img {
   display: flex;
   align-items: center;
 }
-/* .social-proof-rated_item::before {
-  background-image: url(../images/icon-star.svg);
-  width: 17px;
-  height: 16px;
-  content: "";
+.social-proof-rated_item:nth-child(2) {
+  margin-left: 50px;
+}
+.social-proof-rated_item:nth-child(3) {
+  margin-left: 100px;
+}
+.social-proof-stars {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.social-proof-rated-text {
+  margin-left: 25px;
+}
+.social-proof-text {
+  line-height: 25px;
+}
+
+/* CARD */
+.card-header {
+  display: flex;
+}
+.social-proof-card_item {
+  width: 355px;
+  border-radius: 10px;
+  background-color: #511f50;
+  padding: 30px;
+  color: #fff;
+}
+
+.card-header-img {
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.card-header-title {
+  margin-left: 25px;
+}
+.verified-buyer::after {
+  margin-top: 10px;
   display: block;
-} */
+  content: "Verified Buyer";
+  color: #a15289;
+}
+.card_item-text {
+  line-height: 25px;
+}
+.social-proof-card_list {
+  display: flex;
+  padding: 0;
+  align-items: flex-start;
+}
+
+.social-proof-card_item:not(:last-child) {
+  margin-right: 25px;
+}
+.social-proof-card_item:nth-child(2) {
+  margin-top: 25px;
+}
+.social-proof-card_item:nth-child(3) {
+  margin-top: 50px;
+}
